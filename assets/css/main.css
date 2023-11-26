@@ -1,0 +1,522 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #343a40;
+  height: 76px;
+  width: 100%;
+}
+nav .homeListMain {
+  width: 80%;
+  height: 100%;
+}
+nav .homeListMain .homeList {
+  width: 70%;
+  height: 100%;
+}
+nav .homeListMain .homeList .homeListUl {
+  width: 42%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav .homeListMain .homeList .homeListUl .homeListLi {
+  position: relative;
+}
+nav .homeListMain .homeList .homeListUl .homeListLi i {
+  color: #adb6c1;
+  font-size: 12px;
+}
+nav .homeListMain .homeList .homeListUl .homeListLi a {
+  font-size: 16px;
+  line-height: 37px;
+  font-family: poppins;
+  color: #adb6c1;
+}
+nav .homeListMain .homeList .homeListUl .homeListLi a:hover {
+  color: white;
+}
+nav .homeListMain .homeList .homeListUl .homeListLi .hostingDropdown {
+  display: none;
+}
+nav .homeListMain .homeList .homeListUl .homeListLi .hostingDropdown ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 18px;
+}
+nav .homeListMain .homeList .homeListUl .homeListLi .hostingDropdown ul li {
+  cursor: pointer;
+}
+nav .homeListMain .homeList .homeListUl .homeListLi .hostingDropdown ul li:hover {
+  color: #517b14;
+}
+nav .homeListMain .homeList .homeListUl .homeListLi:hover .hostingDropdown {
+  display: block;
+  position: absolute;
+  color: #3e4449;
+  top: 110%;
+  width: 220%;
+  background-color: white;
+}
+nav .homeListMain .homeList .homeListUl .homeListLi:hover .hostingDropdown .subMenu {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .homeListMain .homeList .homeListUl .homeListLi:hover .hostingDropdown .subMenu ul {
+  list-style: none;
+  color: #3e4449;
+}
+nav .homeListMain .homeList .homeListUl .homeListLi:hover .hostingDropdown .subMenu:hover .subMenuDropdown {
+  display: block;
+  position: absolute;
+  top: -50%;
+  right: -100%;
+  width: 100%;
+}
+nav .homeListMain .homeList .homeListUl .homeListLi:hover .hostingDropdown .subMenuDropdown {
+  display: none;
+}
+nav .homeListMain .homeList .navRegLogBtn {
+  gap: 5px;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+nav .homeListMain .homeList .navRegLogBtn .register {
+  background-color: #343a40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  height: 76%;
+  width: 48%;
+  color: white;
+  border: 2px solid #7cbd1e;
+  font-size: 16px;
+  line-height: 37px;
+  font-family: poppins;
+}
+nav .homeListMain .homeList .navRegLogBtn .register:hover {
+  background-color: #7cbd1e;
+}
+nav .homeListMain .homeList .navRegLogBtn .login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  height: 75%;
+  width: 40%;
+  background-color: #7cbd1e;
+  color: white;
+  border: none;
+  font-size: 16px;
+  line-height: 37px;
+  font-family: poppins;
+}
+nav .homeListMain .homeList .navRegLogBtn .login:hover {
+  background-color: #7cbd1e;
+}
+
+#customerSupport {
+  background-image: url(/assets/images/hero_bg_2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#customerSupport .customerSupportTxt {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  width: 100%;
+  height: 300px;
+}
+#customerSupport .customerSupportTxt h1 {
+  height: 50%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 78px;
+  font-family: sans-serif;
+}
+#customerSupport .customerSupportTxt .downloadGetBtns {
+  width: 40%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+#customerSupport .customerSupportTxt .downloadGetBtns .getIn {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  height: 85%;
+  width: 42%;
+  color: white;
+  border: 1px solid white;
+  font-size: 16px;
+  line-height: 37px;
+  font-family: poppins;
+}
+#customerSupport .customerSupportTxt .downloadGetBtns .getIn:hover {
+  background-color: white;
+  color: black;
+}
+#customerSupport .customerSupportTxt .downloadGetBtns .download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  height: 85%;
+  width: 40%;
+  background-color: #7cbd1e;
+  color: white;
+  border: none;
+  font-size: 16px;
+  line-height: 37px;
+  font-family: poppins;
+}
+#customerSupport .customerSupportTxt .downloadGetBtns .download:hover {
+  background-color: #669c19;
+  border-color: #5f9117;
+}
+
+#differentHosting {
+  width: 100%;
+  height: 712px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+}
+#differentHosting .differentHosting {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+#differentHosting .differentHosting h2 {
+  width: 50%;
+  text-align: center;
+}
+#differentHosting .sharedHosting {
+  border: 1px solid #eceeef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 355px;
+  background-color: white;
+}
+#differentHosting .sharedHosting i {
+  font-size: 70px;
+  color: #7cbd1e;
+}
+#differentHosting .sharedHosting h3 {
+  font-weight: 500;
+}
+#differentHosting .sharedHosting p {
+  color: #adb5bd;
+}
+#differentHosting .sharedHosting button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 13%;
+  width: 40%;
+  border-radius: 0;
+  border: none;
+  background-color: #7cbd1e;
+  color: white;
+  font-size: 16px;
+  line-height: 37px;
+  font-family: poppins;
+  transition: 0.2s ease;
+}
+#differentHosting .sharedHosting button:hover {
+  background-color: #669c19;
+}
+
+#satisfiedClients {
+  width: 100%;
+  height: 600px;
+  background-image: url(/assets/images/hero_bg_3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+#satisfiedClients .satisfiedClientsTxt {
+  width: 60%;
+  height: 100%;
+}
+#satisfiedClients .satisfiedClientsTxt h1 {
+  font-size: 80px;
+  line-height: 96px;
+  font-weight: 400;
+  color: white;
+}
+#satisfiedClients .satisfiedClientsTxt p {
+  font-size: 23px;
+  line-height: 36px;
+  font-weight: 400;
+  color: white;
+  height: 30%;
+  width: 80%;
+}
+#satisfiedClients .satisfiedClientsTxt button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  height: 27%;
+  width: 27%;
+  background-color: #7cbd1e;
+  color: white;
+  border: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+#satisfiedClients .satisfiedClientsTxt button:hover {
+  background-color: #669c19;
+  border-color: #5f9117;
+}
+
+#WhyChooseUs {
+  width: 100%;
+  height: 857px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#WhyChooseUs .WhyChooseUsTxt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 140px;
+}
+#WhyChooseUs .WhyChooseUsTxt h2 {
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 400;
+  color: #4d4d4d;
+}
+#WhyChooseUs .qualityHardware {
+  border: 2px solid #e6e6e6;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+#WhyChooseUs .qualityHardware:hover {
+  background-color: #7cbd1e;
+  border: none;
+  color: white;
+}
+#WhyChooseUs .qualityHardware:hover i {
+  color: white;
+}
+#WhyChooseUs .qualityHardware:hover .qualityHardwareTxt h2 {
+  color: white;
+}
+#WhyChooseUs .qualityHardware:hover p {
+  color: white;
+}
+#WhyChooseUs .qualityHardware .qualityHardwareTxt {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+#WhyChooseUs .qualityHardware .qualityHardwareTxt h2 {
+  width: 50%;
+  font-size: 20px;
+  line-height: 24px;
+  color: #4d4d4d;
+}
+#WhyChooseUs .qualityHardware .qualityHardwareTxt i {
+  font-size: 35px;
+}
+#WhyChooseUs .qualityHardware p {
+  color: #b3b3b3;
+  width: 98%;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#testimonials {
+  width: 100%;
+  background-color: #f8f9fa;
+  height: 634px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#testimonials .testimonialsTxt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+#testimonials .testimonialsTxt img {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+}
+#testimonials .testimonialsTxt h2 {
+  height: 90px;
+  color: #4d4d4d;
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 400;
+}
+#testimonials .testimonialsTxt h3 {
+  font-size: 18px;
+  line-height: 22px;
+  height: 45px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  font-weight: 200;
+}
+#testimonials .testimonialsTxt p {
+  font-size: 18px;
+  color: #b3b3b3;
+  line-height: 22px;
+  font-weight: 400;
+}
+#testimonials .testimonialsTxt .lorem {
+  text-align: center;
+  width: 47%;
+  font-size: 18px;
+  line-height: 30px;
+  color: #4d4d4d;
+}
+
+#companyAbout {
+  width: 100%;
+  height: 654px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #393e46;
+}
+#companyAbout .company {
+  display: flex;
+}
+#companyAbout .company .CompanyAbout h2 {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  height: 40px;
+}
+#companyAbout .company .CompanyAbout p {
+  cursor: pointer;
+  font-size: 16px;
+  color: #cccccc;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s ease;
+}
+#companyAbout .company .CompanyAbout p:hover {
+  color: white;
+}
+#companyAbout .UsaEurope {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+#companyAbout .UsaEurope .Europe h3 {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  height: 40px;
+}
+#companyAbout .UsaEurope .Europe .EuropeTxt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#companyAbout .UsaEurope .Europe .EuropeTxt .japsonStreet {
+  width: 26%;
+  height: 80px;
+  font-size: 16px;
+  color: #cccccc;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s ease;
+}
+#companyAbout .UsaEurope .Europe .EuropeTxt .carlStreet {
+  width: 31%;
+  height: 50px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s ease;
+}
+#companyAbout .UsaEurope .Europe .EuropeTxt .telMail {
+  width: 50%;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s ease;
+}
+#companyAbout .createdYear {
+  width: 100%;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#companyAbout .createdYear p {
+  height: 25%;
+  display: flex;
+  align-items: end;
+  gap: 3px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s ease;
+}
+#companyAbout .createdYear p i {
+  height: 40%;
+  display: flex;
+  align-items: center;
+}
+#companyAbout .createdYear p a {
+  text-decoration: none;
+  font-family: poppins;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4470588235);
+  cursor: pointer;
+}
